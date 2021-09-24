@@ -18,3 +18,25 @@ body {
     margin-left: 20% !important;
     margin-right: 20% !important;
 }
+.icon2
+{
+    inline-size: auto;
+    width: auto;
+    height: 30%;
+}
+.container{
+    width: 100%;
+    height: auto;
+
+    /* Add flexbox style*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.box
+{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
