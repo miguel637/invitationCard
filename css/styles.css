@@ -40,3 +40,20 @@ body {
     height: 200px;
     box-sizing: border-box;
 }
+
+/* footer */
+.container-footer{
+    width: 100%;
+    height: auto;
+
+    /* Add flexbox style*/
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-flow: wrap;
+}
+.box-footer
+{
+    width: 222px;
+    box-sizing: border-box;
+}
