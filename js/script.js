@@ -1,6 +1,6 @@
 let MAIN_MUSIC = new Audio('recursos/sounds/mainSound.mp3')
 let POP_SOUND = new Audio('recursos/sounds/pop.mp3')
-let SWORD_SOUND = new Audio('recursos/sounds/blade.mp3')
+let SWORD_SOUND = new Audio('recursos/sounds/blade_btn.mp3')
 let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3')
 
 function mainSound() {
