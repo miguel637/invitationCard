@@ -6,6 +6,7 @@ let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3')
 function mainSound() {
     MAIN_MUSIC.autoplay = true;
     MAIN_MUSIC.volume = 0.07;
+    MAIN_MUSIC.loop = true;
     MAIN_MUSIC.load();
 }
 
