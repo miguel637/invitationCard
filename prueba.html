@@ -3,12 +3,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Halloween</title>
 </head>
-<body>
-    <p>Hola soy un jamón</p>
-    <p>entonces como fue perro</p>
-    <p>esta es una prueba perro</p>
-    <p>Página 2</p>
+<body class="img-fluid m-0 row justify-content-center" onload="mainSound()">
+<div class="title-div">
+    <div>
+        <img class="img-fluid title-img" src="recursos/pag_1 principal/pag-01.png" alt="titulo">
+    </div>
+</div>
+<div class="container">
+    <input onclick="sword_btn()" type="checkbox" class="checkbox-castillo" id="castillo2">
+    <div class="box"><label class="menu" for="castillo2"><img onclick="btn_sound()" class="img-fluid" src="recursos/pag_1 principal/castillo.png" alt=""></label></div>
+    <div class="castillo-panel">
+        <div class="container">
+            <div class="x-boton box">
+                <div class="espaciador">.</div>
+                <label class="menu" for="castillo2"><img class="img-fluid" src="recursos/pag_2/pag-09.png" alt="X"></label>
+            </div>
+            <div class="box title-halloween">
+                <img  class="img-fluid" src="../recursos/pag_2/pag-08.png" alt="">
+            </div>
+            <div class="box logo-castillo">
+                <img  class="img-fluid" src="../recursos/pag_2/pag-07.png" alt="">
+            </div>
+            <div claas="box">
+                <p class="text-castillo" style="text-align: justify;"><span style="font-size: 18px; line-height: 1.4em; font-family: ArtifaktElement-Regular, sans-serif; color: rgb(204, 204, 204);">EL <strong>CASTILLO DEL MONO OSORIO&nbsp;</strong>tiene un siglo de existencia y fue construido a principios del siglo Pasado, por el odont&oacute;logo y artista, Doctor <strong>JUAN C. OSORIO MORALES</strong>, apodado por sus amigos, el <strong>MONO OSORIO</strong>.<br>Durante su permanencia como Agregado Cultural en la Embajada de Colombia en Bruselas, el c&eacute;lebre artista, pint&oacute; al &oacute;leo un castillo original del Siglo XII y a su regreso, de la misi&oacute;n como diplom&aacute;tico en ese pa&iacute;s, empez&oacute; la labor de construcci&oacute;n artesanal de este quijotesco castillo, y en no menos de 20 a&ntilde;os, fue concluida finalmente la ejecuci&oacute;n de esta obra art&iacute;stica.<br>Seg&uacute;n contaba, jocosamente, el mismo constructor, odont&oacute;logo y artista, era que en cada una de las piedras, toscamente labradas, que conformaban las paredes, y los muros cicl&oacute;peos del Castillo, est&aacute; correspond&iacute;a a la extracci&oacute;n de cada una de las muelas, de un atribulado parroquiano, que se consolaba con mirar, c&oacute;mo se iba levantando esta gran mole castillesca en piedra.</span></p>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" class="checkbox-medieval" id="medieval2">
+    <div class="box"><label class="menu" for="medieval2"><img class="img-fluid" src="recursos/pag_1 principal/medieval.png" alt=""></label></div>
+    <div class="medieval-panel">
+        <div class="x-boton"><label class="menu" for="medieval2"><img src="recursos/pag_2/pag-09.png" alt="X"></label></div>
+    </div>
+    <input type="checkbox" class="checkbox-lugar" id="lugar2">
+    <div class="box"><label class="menu" for="lugar2"><img class="img-fluid" src="recursos/pag_1 principal/lugar.png" alt=""></label></div>
+    <div class="lugar-panel">
+        <div class="x-boton"><label class="menu" for="lugar2"><img src="recursos/pag_2/pag-09.png" alt="X"></label></div>
+    </div>
+    <input type="checkbox" class="checkbox-invitacion" id="invitacion2">
+    <div class="box"><label class="menu" for="invitacion2"><img class="img-fluid" src="recursos/pag_1 principal/invitacion.png" alt=""></label></div>
+    <div class="invitacion-panel">
+        <div class="x-boton"><label class="menu" for="invitacion2"><img src="recursos/pag_2/pag-09.png" alt="X"></label></div>
+    </div>
+    <input type="checkbox" class="checkbox-premiacion" id="premiacion2">
+    <div class="box"><label class="menu" for="premiacion2"><img class="img-fluid" src="recursos/pag_1 principal/premiacion.png" alt=""></label></div>
+    <div class="premiacion-panel">
+        <div class="x-boton"><label class="menu" for="premiacion2"><img src="recursos/pag_2/pag-09.png" alt="X"></label></div>
+    </div>
+    <!--<div class="box"><a href="prueba.html"><img class="img-fluid" src="recursos/pag_1 principal/lugar.png" alt=""></a></div>
+    <div class="box"><a href="prueba.html"><img class="img-fluid" src="recursos/pag_1 principal/invitacion.png" alt=""></a></div>
+    <div class="box"><a href="prueba.html"><img class="img-fluid" src="recursos/pag_1 principal/premiacion.png" alt=""></a></div>1-->
+</div>
+<div class="container-footer">
+    <div class="box-footer">
+        <img src="recursos/pag_1 principal/logo.png" alt="logo-hq5">
+    </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
