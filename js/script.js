@@ -26,3 +26,4 @@ function pop_btn() {
     POP_SOUND.volume = 0.05;
     POP_SOUND.load();
 }
+window.onload = mainSound;

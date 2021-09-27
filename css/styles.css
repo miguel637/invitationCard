@@ -84,7 +84,7 @@ body {
 {
     width: 80%;
     height: 100%;
-    background: white;
+    background: url('../recursos/pag_3/fondo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,7 +147,7 @@ body {
 {
     width: 80%;
     height: 100%;
-    background: white;
+    background: url('../recursos/pag_3/fondo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,7 +183,7 @@ body {
 }
 .x-boton label img
 {   
-    width: 80px;
+    width: 70px;
     height: auto;
 }
 ::-webkit-scrollbar
@@ -206,6 +206,11 @@ body {
     margin-right: 20%;
 }
 .menu-castillo
+{
+    margin-left: 5% !important;
+    padding-right: 5% !important;
+}
+.menu-medieval
 {
     margin-left: 5% !important;
     padding-right: 5% !important;
