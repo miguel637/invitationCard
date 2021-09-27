@@ -4,7 +4,7 @@ body {
     position-background: absolute;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-image: url(../recursos/pag_1\ principal/fondo.png);
     align-content: end;
     justify-content: right;
