@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="js/script.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles2.css">
@@ -8,6 +9,11 @@
     <title>Halloween</title>
 </head>
 <body>
+    <audio id="myAudio" controls>
+        <source src="recursos/sounds/blade_btn.mp3" type="audio/ogg">
+        <source src="recursos/sounds/blade_btn.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
 
 <div class="secondary-div">
     <img src="recursos/pag_2/background2.png">
@@ -16,12 +22,12 @@
 <div class="text-div">
 
     <div class="escape">
-        <a href="index.html"><img src="recursos/pag_2/pag-09.png" alt="esc"></a>
+        <a href="index.html"><img onclick="btn_sound()" src="recursos/pag_2/pag-09.png" alt="esc"></a>
     </div>
 
     <images>
         <img class="img-fluid title-img" src="recursos/pag_1 principal/pag-01.png" >
-        <img class="img-fluid title-img" src="recursos/pag_2/pag-07.png">
+        <img onclick="btn_sound()" class="img-fluid title-img" src="recursos/pag_2/pag-07.png">
     </images>
 
     <text>
@@ -35,6 +41,6 @@
 
 </div>
 
-
+    <script src="js/script.js"></script>
 </body>
 </html>
