@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    background-color: aqua !important;
+    background-size: auto;
+    align-content: end;
+    justify-content: center;
+}
+
+.body button {
+    background-color: red;
+    position: absolute;
+}
+
+.buttons-div button {
+    height: 100px;
+}
