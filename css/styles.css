@@ -59,7 +59,25 @@ body {
 }
 
 /*pruba nav*/
-.right-panel
+.castillo-panel
+{
+    width: 80%;
+    height: 100%;
+    background: url(../recursos/pag_2/background2.png);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+
+}
+.checkbox-castillo:checked ~ .castillo-panel
+{
+    left: 20%;
+}
+.medieval-panel
 {
     width: 80%;
     height: 100%;
@@ -71,16 +89,98 @@ body {
     align-items: center;
     justify-content: center;
     transition: left 0.4s;
+
 }
-.checkbox:checked ~ .right-panel
+.checkbox-medieval:checked ~ .medieval-panel
 {
     left: 20%;
 }
-.checkbox
+.lugar-panel
+{
+    width: 80%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+
+}
+.checkbox-lugar:checked ~ .lugar-panel
+{
+    left: 20%;
+}
+.invitacion-panel
+{
+    width: 80%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+
+}
+.checkbox-invitacion:checked ~ .invitacion-panel
+{
+    left: 20%;
+}
+.premiacion-panel
+{
+    width: 80%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+
+}
+.checkbox-premiacion:checked ~ .premiacion-panel
+{
+    left: 20%;
+}
+.checkbox-castillo, .checkbox-medieval, .checkbox-lugar, .checkbox-invitacion, .checkbox-premiacion
 {
    display: none;
+}
+
+.x-boton
+{
+    align-items: right;
+    width: 80%;
+    height: auto;
+}
+.x-boton .espaciador
+{
+    width 60%;
+}
+.x-boton label img
+{   
+    width: 80px;
+    height: auto;
 }
 ::-webkit-scrollbar
 {
     display: none;
+}
+
+.title-halloween
+{
+    width: 60%;
+    height: auto;
+}
+.logo-castillo
+{
+    width: 50%;
+    height: auto;
 }
