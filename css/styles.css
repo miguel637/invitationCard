@@ -57,3 +57,30 @@ body {
     width: 222px;
     box-sizing: border-box;
 }
+
+/*pruba nav*/
+.right-panel
+{
+    width: 80%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+}
+.checkbox:checked ~ .right-panel
+{
+    left: 20%;
+}
+.checkbox
+{
+   display: none;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
