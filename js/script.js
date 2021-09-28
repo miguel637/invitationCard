@@ -3,7 +3,7 @@ let TRUMPET_SOUND = new Audio('recursos/sounds/trumpet_btn.mp3');
 let SWORD_SOUND = new Audio('recursos/sounds/blade_btn.mp3');
 let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3');
 
-let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
+shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
 let disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
 let grimmSound = new Audio('recursos/sounds/Grimm/grimm'+getRandomInt(1, 3)+'.mp3');
 let medievalSound = new Audio('recursos/sounds/Medieval/medieval'+getRandomInt(1, 6)+'.mp3');
