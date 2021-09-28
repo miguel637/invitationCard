@@ -6,45 +6,39 @@ let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3');
 let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
 let disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
 let grimmSound = new Audio('recursos/sounds/Grimm/grimm'+getRandomInt(1, 3)+'.mp3');
+let medievalSound = new Audio('recursos/sounds/Medieval/medieval'+getRandomInt(1, 6)+'.mp3');
 
 let mainValue = 0.07;
-
-// Retorna un número aleatorio entre min (incluido) y max (excluido)
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
-
 function esc_btn() {
     shrekSound.pause();
     disneySound.pause();
     MAIN_MUSIC.volume = mainValue;
 }
-
 function mainSound() {
     MAIN_MUSIC.autoplay = true;
     MAIN_MUSIC.volume = mainValue;
     MAIN_MUSIC.loop = true;
     MAIN_MUSIC.load();
 }
-
 function sword_btn() {
     SWORD_SOUND.autoplay = true;
     SWORD_SOUND.volume = 0.05;
     SWORD_SOUND.load();
 }
-
 function horse_btn() {
     HORSE_SOUND.autoplay = true;
     HORSE_SOUND.volume = 0.05;
     HORSE_SOUND.load();
 }
-
 function pauseAll(){
     shrekSound.pause();
     disneySound.pause();
     grimmSound.pause();
+    medievalSound.pause();
 }
-
 function shrek_btn() {
     pauseAll();
     MAIN_MUSIC.volume = 0.01;
@@ -53,7 +47,6 @@ function shrek_btn() {
     shrekSound.volume = 0.8;
     shrekSound.load();
 }
-
 function disney_btn() {
     pauseAll();
     MAIN_MUSIC.volume = 0.01;
@@ -71,6 +64,14 @@ function grimm_btn() {
     grimmSound.load();
 }
 
+function medieval_btn() {
+    pauseAll();
+    MAIN_MUSIC.volume = 0.01;
+    medievalSound = new Audio('recursos/sounds/Medieval/medieval'+getRandomInt(1, 6)+'.mp3');
+    medievalSound.autoplay = true;
+    medievalSound.volume = 0.8;
+    medievalSound.load();
+}
 
 function pop_btn() {
     console.log(MAIN_MUSIC.volume);
