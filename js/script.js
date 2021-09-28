@@ -3,6 +3,8 @@ let POP_SOUND = new Audio('recursos/sounds/pop.mp3');
 let SWORD_SOUND = new Audio('recursos/sounds/blade_btn.mp3');
 let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3');
 
+let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 10)+'.mp3');
+
 let mainValue = 0.07;
 
 // Retorna un número aleatorio entre min (incluido) y max (excluido)
@@ -30,13 +32,15 @@ function horse_btn() {
 }
 
 function shrek_btn() {
-
     if(!shrekSound.paused && !shrekSound.ended)   {
+        MAIN_MUSIC.volume = mainValue;
         shrekSound.pause();
         shrekSound.play();
     }
     else
     {
+        shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 10)+'.mp3');
+        MAIN_MUSIC.volume = 0.01;
         shrekSound.pause();
         shrekSound.autoplay = true;
         shrekSound.volume = 0.8;
@@ -45,17 +49,6 @@ function shrek_btn() {
 }
 
 function pop_btn() {
-    let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 10)+'.mp3');
-    // if(!POP_SOUND.paused && !POP_SOUND.ended)   {
-    //     POP_SOUND.pause();
-    //     POP_SOUND.play();
-    // }
-    // else
-    // {
-    //     POP_SOUND.pause();
-    //     POP_SOUND.autoplay = true;
-    //     POP_SOUND.volume = 0.05;
-    //     POP_SOUND.load();
-    // }
+    console.log(MAIN_MUSIC.volume);
 }
 window.onload = mainSound;
