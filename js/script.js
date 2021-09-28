@@ -47,19 +47,5 @@ function shrek_btn() {
 
 function pop_btn() {
     console.log(MAIN_MUSIC.volume);
-    // MAIN_MUSIC.volume = mainValue;
-    // if(!shrekSound.paused && !shrekSound.ended)   {
-    //     shrekSound.pause();
-    //     shrekSound.play();
-    // }
-    // else
-    // {
-    //     shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 10)+'.mp3');
-    //     MAIN_MUSIC.volume = 0.01;
-    //     shrekSound.pause();
-    //     shrekSound.autoplay = true;
-    //     shrekSound.volume = 0.8;
-    //     shrekSound.load();
-    // }
 }
 window.onload = mainSound;
