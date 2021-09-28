@@ -1,10 +1,4 @@
-body {
-    display: flex;
-    background-color: aqua !important;
-    background-size: auto;
-    justify-content: center;
-    align-content: end;
-}
+
 
 .body button {
     background-color: red;
