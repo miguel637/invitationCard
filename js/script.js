@@ -5,7 +5,7 @@ let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3');
 
 let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
 let disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
-
+let grimmSound = new Audio('recursos/sounds/Grimm/grimm'+getRandomInt(1, 3)+'.mp3');
 
 let mainValue = 0.07;
 
@@ -42,6 +42,7 @@ function horse_btn() {
 function pauseAll(){
     shrekSound.pause();
     disneySound.pause();
+    grimmSound.pause();
 }
 
 function shrek_btn() {
@@ -60,6 +61,14 @@ function disney_btn() {
     disneySound.autoplay = true;
     disneySound.volume = 0.7;
     disneySound.load();
+}
+function grimm_btn() {
+    pauseAll();
+    MAIN_MUSIC.volume = 0.01;
+    grimmSound = new Audio('recursos/sounds/Grimm/grimm'+getRandomInt(1, 3)+'.mp3');
+    grimmSound.autoplay = true;
+    grimmSound.volume = 0.7;
+    grimmSound.load();
 }
 
 
