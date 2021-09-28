@@ -4,7 +4,7 @@ let SWORD_SOUND = new Audio('recursos/sounds/blade_btn.mp3');
 let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3');
 
 let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
-let disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 10)+'.mp3');
+let disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
 
 
 let mainValue = 0.07;
@@ -56,7 +56,7 @@ function shrek_btn() {
 function disney_btn() {
     pauseAll();
     MAIN_MUSIC.volume = 0.01;
-    disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 3)+'.mp3');
+    disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
     disneySound.autoplay = true;
     disneySound.volume = 0.8;
     disneySound.load();
