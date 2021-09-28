@@ -12,6 +12,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+function esc_btn() {
+    shrekSound.pause();
+    MAIN_MUSIC.volume = mainValue;
+}
+
 function mainSound() {
     MAIN_MUSIC.autoplay = true;
     MAIN_MUSIC.volume = mainValue;
@@ -33,6 +38,7 @@ function horse_btn() {
 
 function shrek_btn() {
     shrekSound.pause();
+    MAIN_MUSIC.volume = 0.01;
     shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 10)+'.mp3');
     shrekSound.autoplay = true;
     shrekSound.volume = 0.8;
