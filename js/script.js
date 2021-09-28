@@ -39,7 +39,7 @@ function horse_btn() {
 }
 function trumpet_btn() {
     TRUMPET_SOUND.autoplay = true;
-    TRUMPET_SOUND.volume = 0.05;
+    TRUMPET_SOUND.volume = 0.08;
     TRUMPET_SOUND.load();
 }
 function pauseAll(){
