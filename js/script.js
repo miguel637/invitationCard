@@ -1,7 +1,7 @@
-let MAIN_MUSIC = new Audio('recursos/sounds/mainSound.mp3');
-let TRUMPET_SOUND = new Audio('recursos/sounds/trumpet_btn.mp3');
-let SWORD_SOUND = new Audio('recursos/sounds/blade_btn.mp3');
-let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3');
+let MAIN_MUSIC = new Audio('../recursos/sounds/mainSound.mp3');
+let TRUMPET_SOUND = new Audio('../recursos/sounds/trumpet_btn.mp3');
+let SWORD_SOUND = new Audio('../recursos/sounds/blade_btn.mp3');
+let HORSE_SOUND = new Audio('../recursos/sounds/horse_btn.mp3');
 
 let shrekSound = new Audio('../recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
 let disneySound = new Audio('../recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
