@@ -76,7 +76,7 @@ function medieval_btn() {
     MAIN_MUSIC.volume = minVolume;
     medievalSound = new Audio('recursos/sounds/Medieval/medieval'+getRandomInt(1, 6)+'.mp3');
     medievalSound.autoplay = true;
-    medievalSound.volume = 0.7;
+    medievalSound.volume = 0.6;
     medievalSound.load();
 }
 window.onload = mainSound;
