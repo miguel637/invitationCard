@@ -58,7 +58,7 @@ function disney_btn() {
     MAIN_MUSIC.volume = 0.01;
     disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
     disneySound.autoplay = true;
-    disneySound.volume = 0.8;
+    disneySound.volume = 0.7;
     disneySound.load();
 }
 
