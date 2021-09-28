@@ -51,7 +51,7 @@ function pauseAll(){
 function shrek_btn() {
     pauseAll();
     MAIN_MUSIC.volume = minVolume;
-    shrekSound = new Audio(src=URL+"recursos/sounds/Shrek/shrek"+getRandomInt(1, 11)+".mp3");
+    shrekSound = new Audio(src=URL+"recursos/sounds/Shrek/Shrek"+getRandomInt(1, 11)+".mp3");
     shrekSound.autoplay = true;
     shrekSound.volume = 0.8;
     shrekSound.load();
