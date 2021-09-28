@@ -3,7 +3,9 @@ let POP_SOUND = new Audio('recursos/sounds/pop.mp3');
 let SWORD_SOUND = new Audio('recursos/sounds/blade_btn.mp3');
 let HORSE_SOUND = new Audio('recursos/sounds/horse_btn.mp3');
 
-let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 10)+'.mp3');
+let shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
+let disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 10)+'.mp3');
+
 
 let mainValue = 0.07;
 
@@ -14,6 +16,7 @@ function getRandomInt(min, max) {
 
 function esc_btn() {
     shrekSound.pause();
+    disneySound.pause();
     MAIN_MUSIC.volume = mainValue;
 }
 
@@ -39,10 +42,19 @@ function horse_btn() {
 function shrek_btn() {
     shrekSound.pause();
     MAIN_MUSIC.volume = 0.01;
-    shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 10)+'.mp3');
+    shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
     shrekSound.autoplay = true;
     shrekSound.volume = 0.8;
     shrekSound.load();
+}
+
+function disney_btn() {
+    disneySound.pause();
+    MAIN_MUSIC.volume = 0.01;
+    disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 1)+'.mp3');
+    disneySound.autoplay = true;
+    disneySound.volume = 0.8;
+    disneySound.load();
 }
 
 function pop_btn() {
