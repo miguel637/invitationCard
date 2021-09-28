@@ -103,7 +103,7 @@ body {
 {
     width: 80%;
     height: 100%;
-    background: white;
+    background: url(../recursos/pag_2/background2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,11 +120,12 @@ body {
 {
     left: 20%;
 }
+/*Pruebas 2.0*/
 .invitacion-panel
 {
     width: 80%;
     height: 100%;
-    background: white;
+    background: url(../recursos/pag_5/pag.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,7 +146,7 @@ body {
 {
     width: 80%;
     height: 100%;
-    background: url('../recursos/pag_3/fondo.png');
+    background: url('../recursos/pag_6/pag_20.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,15 +174,14 @@ body {
     width: 80%;
     height: auto;
 }
-.x-boton
+div .x-boton
 {
-    padding-top: 30px;
     position: relative;
     left: 78%;
 }
 .x-boton label img
 {   
-    width: 70px;
+    width: 50;
     height: auto;
 }
 ::-webkit-scrollbar
@@ -191,12 +191,26 @@ body {
 
 .title-halloween
 {
-    width: 50%;
+    width: 30%;
     height: auto;
     margin-left: 20%;
     margin-right: 20%;
 }
-.logo-castillo
+.sub-halloween
+{
+    width: 20%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.image-invitation
+{
+    width: 80%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.logo-castillo, .logo-lugar
 {
     width: 30%;
     height: auto;
@@ -205,11 +219,18 @@ body {
 }
 .menu-castillo
 {
-    margin-left: 5% !important;
+    padding-left: 5% !important;
     padding-right: 5% !important;
 }
-.menu-medieval
+.menu-lugar .x-boton
 {
-    margin-left: 5% !important;
-    padding-right: 5% !important;
+    width: max-content;
+}
+
+.menu-lugar
+{
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
 }
