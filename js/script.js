@@ -60,7 +60,7 @@ function disney_btn() {
     MAIN_MUSIC.volume = minVolume;
     disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 9)+'.mp3');
     disneySound.autoplay = true;
-    disneySound.volume = 0.7;
+    disneySound.volume = 0.6;
     disneySound.load();
 }
 function grimm_btn() {
