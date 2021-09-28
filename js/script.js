@@ -39,8 +39,13 @@ function horse_btn() {
     HORSE_SOUND.load();
 }
 
-function shrek_btn() {
+function pauseAll(){
     shrekSound.pause();
+    disneySound.pause();
+}
+
+function shrek_btn() {
+    pauseAll();
     MAIN_MUSIC.volume = 0.01;
     shrekSound = new Audio('recursos/sounds/Shrek/shrek'+getRandomInt(1, 11)+'.mp3');
     shrekSound.autoplay = true;
@@ -49,13 +54,14 @@ function shrek_btn() {
 }
 
 function disney_btn() {
-    disneySound.pause();
+    pauseAll();
     MAIN_MUSIC.volume = 0.01;
-    disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 1)+'.mp3');
+    disneySound = new Audio('recursos/sounds/Disney/disney'+getRandomInt(1, 3)+'.mp3');
     disneySound.autoplay = true;
     disneySound.volume = 0.8;
     disneySound.load();
 }
+
 
 function pop_btn() {
     console.log(MAIN_MUSIC.volume);
