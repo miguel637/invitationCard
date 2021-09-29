@@ -5,10 +5,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+    loading:"lazy";
     background-image: url(../recursos/pag_1\ principal/fondo.png);
     align-content: end;
     justify-content: right;
-    loading:"lazy";
 }
 @supports(object-fit: cover){
     .body img {
