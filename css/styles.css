@@ -3,6 +3,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../recursos/pag_1\ principal/fondo.png);
+    background-color: black !important;
+    height: 100vh;
 }
 
 .title-div
@@ -76,7 +78,7 @@ body {
 }
 .castillo-panel-responsive
 {
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: url(../recursos/pag_2/background2.png);
     background-position: center;
@@ -84,7 +86,7 @@ body {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,6 +96,10 @@ body {
 {
     left: 20%;
 }
+.checkbox-castillo:checked ~ .castillo-panel-responsive
+{
+    left: 0%;
+}
 .medieval-panel
 {
     width: 80%;
@@ -102,7 +108,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 100%;
     display: flex;
@@ -111,9 +117,10 @@ body {
     transition: left 0.4s;
 
 }
+
 .medieval-panel-responsive
 {
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: url('../recursos/pag_3/fondo.png');
     background-position: center;
@@ -121,7 +128,7 @@ body {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,6 +138,7 @@ body {
 {
     left: 20%;
 }
+
 .lugar-panel
 {
     width: 80%;
@@ -158,7 +166,7 @@ body {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +177,8 @@ body {
 {
     left: 20%;
 }
+
+
 /*Pruebas 2.0*/
 .invitacion-panel
 {
@@ -197,7 +207,7 @@ body {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,6 +219,8 @@ body {
 {
     left: 20%;
 }
+
+
 .premiacion-panel
 {
     width: 80%;
@@ -227,7 +239,7 @@ body {
 }
 .premiacion-panel-responsive
 {
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: url('../recursos/pag_6/pag_20.png');
     background-position: center;
@@ -235,7 +247,7 @@ body {
     background-size: cover;
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,7 +264,6 @@ body {
 
 .x-boton
 {
-    align-items: right;
     width: 80%;
     height: auto;
 }
@@ -315,4 +326,38 @@ div .x-boton
     margin-right: 0% !important;
     padding-left: 0% !important;
     padding-right: 0% !important;
+}
+
+.lugar-panel-responsive, .premiacion-panel-responsive, .castillo-panel-responsive, .medieval-panel-responsive, .invitacion-panel-responsive
+{
+    display: none;
+}
+@media only screen and (max-width:560px){
+    .lugar-panel, .premiacion-panel, .castillo-panel, .medieval-panel, .invitacion-panel
+    {
+        display: none;
+    }
+    .checkbox-castillo:checked ~ .castillo-panel-responsive
+    {
+        display: flex;
+    }
+    .checkbox-premiacion:checked ~ .premiacion-panel-responsive
+    {
+        display: flex;
+    }
+    .checkbox-invitacion:checked ~ .invitacion-panel-responsive
+    {
+        display: flex;
+    }
+    .checkbox-lugar:checked ~ .lugar-panel-responsive
+    {
+        display: flex;
+    }
+    .checkbox-medieval:checked ~ .medieval-panel-responsive
+    {
+        display: flex;
+    }
+    body{
+        position: relative;
+    };
 }
