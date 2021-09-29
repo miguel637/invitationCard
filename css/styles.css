@@ -74,6 +74,22 @@ body {
     transition: left 0.4s;
 
 }
+.castillo-panel-responsive
+{
+    width: 80%;
+    height: 100%;
+    background: url(../recursos/pag_2/background2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+}
 .checkbox-castillo:checked ~ .castillo-panel
 {
     left: 20%;
@@ -95,6 +111,22 @@ body {
     transition: left 0.4s;
 
 }
+.medieval-panel-responsive
+{
+    width: 80%;
+    height: 100%;
+    background: url('../recursos/pag_3/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+}
 .checkbox-medieval:checked ~ .medieval-panel
 {
     left: 20%;
@@ -102,6 +134,23 @@ body {
 .lugar-panel
 {
     width: 80%;
+    height: 100%;
+    background: url(../recursos/pag_2/background2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+
+}
+.lugar-panel-responsive
+{
+    width: 100%;
     height: 100%;
     background: url(../recursos/pag_2/background2.png);
     background-position: center;
@@ -138,6 +187,24 @@ body {
     transition: left 0.4s;
 
 }
+.invitacion-panel-responsive
+{
+    width: 100%;
+    height: 100%;
+    background: url(../recursos/pag_5/pag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+
+}
+
 .checkbox-invitacion:checked ~ .invitacion-panel
 {
     left: 20%;
@@ -157,7 +224,22 @@ body {
     align-items: center;
     justify-content: center;
     transition: left 0.4s;
-
+}
+.premiacion-panel-responsive
+{
+    width: 80%;
+    height: 100%;
+    background: url('../recursos/pag_6/pag_20.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
 }
 .checkbox-premiacion:checked ~ .premiacion-panel
 {
@@ -234,8 +316,3 @@ div .x-boton
     padding-left: 0% !important;
     padding-right: 0% !important;
 }
-
-
-/*.animate-btn:hover{
-    width: 300px !important;
-}*/
