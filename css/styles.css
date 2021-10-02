@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-image: url(../recursos/pag_1\ principal/fondo.png);
     background-color: black !important;
+    height: 100vh;
 }
 
 .title-div
@@ -347,8 +348,9 @@ div .x-boton
     {
         display: flex;
     }
-    .checkbox-premiacion:checked ~ body
+    .checkbox-premiacion:checked ~ .container-footer
     {
+        display: none;
     }
     .checkbox-invitacion:checked ~ .invitacion-panel-responsive
     {
