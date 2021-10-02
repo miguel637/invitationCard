@@ -225,7 +225,7 @@ body {
 {
     width: 80%;
     height: 100%;
-    background: url('../recursos/pag_6/pag_20.png');
+    background: url('../recursos/pag_6/fondo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,8 +240,8 @@ body {
 .premiacion-panel-responsive
 {
     width: 100%;
-    height: 100%;
-    background: url('../recursos/pag_6/pag_20.png');
+    height: 100vh;
+    background: url('../recursos/pag_6/fondo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,11 +271,11 @@ body {
 div .x-boton
 {
     position: relative;
-    left: 78%;
+    left: 80%;
 }
 .x-boton label img
 {   
-    width: 50;
+    width: 10vh;
     height: auto;
 }
 ::-webkit-scrollbar
@@ -285,7 +285,7 @@ div .x-boton
 
 .title-halloween
 {
-    width: 30%;
+    width: 100vh;
     height: auto;
     margin-left: 20%;
     margin-right: 20%;
