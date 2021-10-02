@@ -4,7 +4,6 @@ body {
     background-size: cover;
     background-image: url(../recursos/pag_1\ principal/fondo.png);
     background-color: black !important;
-    height: 100vh;
 }
 
 .title-div
@@ -236,12 +235,14 @@ body {
     align-items: center;
     justify-content: center;
     transition: left 0.4s;
+
 }
 .premiacion-panel-responsive
 {
     width: 100%;
     height: 100vh;
     background: url('../recursos/pag_6/fondo.jpg');
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -345,6 +346,9 @@ div .x-boton
     .checkbox-premiacion:checked ~ .premiacion-panel-responsive
     {
         display: flex;
+    }
+    .checkbox-premiacion:checked ~ body
+    {
     }
     .checkbox-invitacion:checked ~ .invitacion-panel-responsive
     {
